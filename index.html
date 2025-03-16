@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>积分网页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="auth">
+      <h1>欢迎来到积分网页</h1>
+      <div id="loginForm">
+        <h2>登录</h2>
+        <input type="text" id="loginUsername" placeholder="用户名">
+        <input type="password" id="loginPassword" placeholder="密码">
+        <button id="loginButton">登录</button>
+        <p id="loginMessage"></p>
+      </div>
+      <div id="registerForm">
+        <h2>注册</h2>
+        <input type="text" id="registerUsername" placeholder="用户名">
+        <input type="password" id="registerPassword" placeholder="密码">
+        <button id="registerButton">注册</button>
+        <p id="registerMessage"></p>
+      </div>
+    </div>
+    <div id="dashboard" style="display: none;">
+      <h2>欢迎, <span id="username"></span>!</h2>
+      <p>当前积分: <span id="points"></span></p>
+      <button id="checkinButton">每日签到</button>
+      <p id="checkinMessage"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
